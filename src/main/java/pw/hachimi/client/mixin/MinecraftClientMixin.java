@@ -47,7 +47,6 @@ import pw.hachimi.client.event.render.HasOutlineEvent;
 import pw.hachimi.client.model.player.UnidentifiedInterface5;
 import pw.hachimi.client.utils.UnidentifiedHelper;
 import pw.hachimi.eventbus.EventBusImpl;
-import pw.hachimi.satin.Checks;
 
 @Mixin(MinecraftClient.class)
 public abstract class MinecraftClientMixin implements UnidentifiedInterface5 {
@@ -99,7 +98,6 @@ public abstract class MinecraftClientMixin implements UnidentifiedInterface5 {
 
    @Inject(method = "<init>", at = @At(value = "INVOKE", target = "Lnet/minecraft/text/KeybindTranslations;setFactory(Ljava/util/function/Function;)V"))
    private void hookInit(RunArgs runArgs, CallbackInfo callbackInfo) {
-      Checks.check();
       Bootstrap.NU();
    }
 

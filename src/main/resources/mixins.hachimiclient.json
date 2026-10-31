@@ -92,7 +92,6 @@
     "LimbAnimatorMixin2",
     "LivingEntityMixin",
     "LivingEntityRendererMixin",
-    "MainMixin",
     "MessageScreenMixin",
     "MinecraftClientMixin",
     "MinecraftClientMixin2",
