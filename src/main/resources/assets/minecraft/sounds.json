@@ -1,0 +1,24 @@
+{
+  "item.spear.attack": {
+    "subtitle": "subtitles.item.spear.attack",
+    "sounds": [
+      "minecraft:spear_attack1",
+      "minecraft:spear_attack2",
+      "minecraft:spear_attack3"
+    ]
+  },
+  "item.spear.use": {
+    "subtitle": "subtitles.item.spear.use",
+    "sounds": [
+      "minecraft:spear_use"
+    ]
+  },
+  "item.spear.lunge": {
+    "subtitle": "subtitles.item.spear.lunge",
+    "sounds": [
+      "minecraft:spear_lunge1",
+      "minecraft:spear_lunge2",
+      "minecraft:spear_lunge3"
+    ]
+  }
+}

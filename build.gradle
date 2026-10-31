@@ -1,0 +1,81 @@
+plugins {
+    id 'fabric-loom' version '1.16.3'
+}
+
+version = project.mod_version
+group = project.maven_group
+
+base {
+    archivesName = project.archives_base_name
+}
+
+repositories {
+    mavenCentral()
+    maven { url = 'https://maven.fabricmc.net/' }
+}
+
+loom {
+    accessWidenerPath = file('src/main/resources/hachimi.accesswidener')
+}
+
+sourceSets {
+    stubs {
+        java.srcDir 'src/stubs/java'
+    }
+}
+
+dependencies {
+    compileOnly sourceSets.stubs.output
+    minecraft "com.mojang:minecraft:${project.minecraft_version}"
+    mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
+    modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
+    modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
+    compileOnly 'io.github.llamalad7:mixinextras-common:0.4.1'
+    annotationProcessor 'io.github.llamalad7:mixinextras-common:0.4.1'
+    testImplementation platform('org.junit:junit-bom:5.11.4')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    testImplementation 'org.junit.platform:junit-platform-launcher'
+}
+
+test {
+    useJUnitPlatform()
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_21
+    targetCompatibility = JavaVersion.VERSION_21
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.release = 21
+    options.encoding = 'UTF-8'
+    options.compilerArgs += ['-Xmaxerrs', '100000', '-Xmaxwarns', '10']
+    if (System.getenv('JAVAC_ALL_ERRORS')) {
+        options.compilerArgs += ['-XDshould-stop.ifError=FLOW']
+    }
+}
+
+processResources {
+    inputs.property 'version', project.version
+    filesMatching('fabric.mod.json') {
+        expand 'version': inputs.properties.version
+    }
+}
+
+def classpathOut = { String name ->
+    def dir = project.findProperty('classpathDir')
+    dir ? file("${rootProject.projectDir}/${dir}/${name}") : layout.buildDirectory.file(name).get().asFile
+}
+
+tasks.register('printTestClasspath') {
+    dependsOn 'testClasses'
+    doLast {
+        classpathOut('test-classpath.txt').text = sourceSets.test.runtimeClasspath.files.join(File.pathSeparator)
+    }
+}
+
+tasks.register('printClasspath') {
+    doLast {
+        classpathOut('compile-classpath.txt').text = sourceSets.main.compileClasspath.files.join(File.pathSeparator)
+    }
+}

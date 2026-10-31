@@ -1,0 +1,73 @@
+{
+  "gui_click": {
+    "sounds": [
+      {
+        "name": "hachimiclient:gui_click",
+        "stream": false
+      }
+    ]
+  },
+
+  "twitter": {
+    "sounds": [
+      {
+        "name": "hachimiclient:twitter",
+        "stream": false
+      }
+    ]
+  },
+
+  "ios": {
+    "sounds": [
+      {
+        "name": "hachimiclient:ios",
+        "stream": false
+      }
+    ]
+  },
+
+  "discord": {
+    "sounds": [
+      {
+        "name": "hachimiclient:discord",
+        "stream": false
+      }
+    ]
+  },
+
+  "steam": {
+    "sounds": [
+      {
+        "name": "hachimiclient:steam",
+        "stream": false
+      }
+    ]
+  },
+
+  "add_entity": {
+    "sounds": [
+      {
+        "name": "hachimiclient:add_entity",
+        "stream": false
+      }
+    ]
+  },
+
+  "enable": {
+    "sounds": [
+      {
+        "name": "hachimiclient:enable",
+        "stream": false
+      }
+    ]
+  },
+
+  "disable": {
+    "sounds": [
+      {
+        "name": "hachimiclient:disable",
+        "stream": false
+      }
+    ]
+  }
+}

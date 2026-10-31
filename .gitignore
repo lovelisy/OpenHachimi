@@ -1,0 +1,10 @@
+build/
+.gradle/
+.idea/
+*.iml
+out/
+run/
+logs/
+crash-reports/
+hs_err_pid*.log
+src/test/
