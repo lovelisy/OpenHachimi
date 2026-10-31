@@ -115,7 +115,6 @@ import pw.hachimi.client.module.misc.NoPacketKick;
 import pw.hachimi.client.module.misc.NoSoundLag;
 import pw.hachimi.client.module.misc.PMSound;
 import pw.hachimi.client.module.misc.PacketLogger;
-import pw.hachimi.client.module.misc.Ping2;
 import pw.hachimi.client.module.misc.PotionTracker;
 import pw.hachimi.client.module.misc.SkinBlink;
 import pw.hachimi.client.module.misc.Spammer;
@@ -338,7 +337,6 @@ public final class ModuleManager {
          new Step(),
          new TickShift(),
          new TridentTweaks(),
-         new Ping2(),
          new Velocity(),
          new Yaw(),
          new Ambience(),
