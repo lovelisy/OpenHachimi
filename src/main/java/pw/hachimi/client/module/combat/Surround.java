@@ -360,7 +360,7 @@ public class Surround extends Multitask {
             Direction[] directions2 = BoxUtils.b;
             int n4 = directions2.length;
             int n5 = 0;
-            if (0 < 4) {
+            if (true) {
                do {
                   Direction direction2 = directions2[n5];
                   BlockPos pos7 = pos6.offset(direction2);

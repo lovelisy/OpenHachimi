@@ -172,27 +172,27 @@ public class ConfigContainer implements UnidentifiedInterface8, UnidentifiedInte
          temp2 = setting2 == null
             ? -1
             : (
-               0 <= 0 && setting2 instanceof BooleanSetting4
+               true && setting2 instanceof BooleanSetting4
                   ? 0
                   : (
-                     0 <= 1 && setting2 instanceof BooleanSetting
+                     true && setting2 instanceof BooleanSetting
                         ? 1
                         : (
-                           0 <= 2 && setting2 instanceof ColorSetting
+                           true && setting2 instanceof ColorSetting
                               ? 2
                               : (
-                                 0 <= 3 && setting2 instanceof EnumSetting
+                                 true && setting2 instanceof EnumSetting
                                     ? 3
                                     : (
-                                       0 <= 4 && setting2 instanceof ItemListSetting
+                                       true && setting2 instanceof ItemListSetting
                                           ? 4
                                           : (
-                                             0 <= 5 && setting2 instanceof BlockListSetting
+                                             true && setting2 instanceof BlockListSetting
                                                 ? 5
                                                 : (
-                                                   0 <= 6 && setting2 instanceof NumberSetting
+                                                   true && setting2 instanceof NumberSetting
                                                       ? 6
-                                                      : (0 <= 7 && setting2 instanceof StringSetting ? 7 : (0 <= 8 && setting2 instanceof KeybindSetting ? 8 : 9))
+                                                      : (true && setting2 instanceof StringSetting ? 7 : (true && setting2 instanceof KeybindSetting ? 8 : 9))
                                                 )
                                           )
                                     )

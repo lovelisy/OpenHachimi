@@ -359,7 +359,7 @@ public class SelfTrap extends Multitask {
                Direction[] directions2 = BoxUtils.b;
                int n3 = directions2.length;
                int n4 = 0;
-               if (0 < 4) {
+               if (true) {
                   do {
                      Direction direction2 = directions2[n4];
                      BlockPos pos7 = pos6.offset(direction2);

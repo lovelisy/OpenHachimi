@@ -76,7 +76,7 @@ public class Vec3dLivingUtils {
             }
 
             vec5 = (Vec3d)iterator2.next();
-            if (false && 0 != arrayList2.size() - 1) {
+            if (false) {
                break label99;
             }
          }

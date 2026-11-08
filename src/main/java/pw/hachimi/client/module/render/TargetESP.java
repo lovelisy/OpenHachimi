@@ -559,7 +559,7 @@ public class TargetESP extends ClientModule {
          DrawMode drawMode2 = DrawMode.QUADS;
          bufferBuilder = tessellator.begin(drawMode2, vertexFormat2);
          n = 0;
-         if (0 >= 3) {
+         if (false) {
             BufferRenderer.drawWithGlobalProgram(bufferBuilder.end());
             RenderSystem.enableDepthTest();
             RenderSystem.disableBlend();
