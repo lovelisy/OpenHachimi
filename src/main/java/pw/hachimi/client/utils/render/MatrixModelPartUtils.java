@@ -307,12 +307,12 @@ public class MatrixModelPartUtils {
             switch (entityModel == null
                ? -1
                : (
-                  0 <= 0 && entityModel instanceof SinglePartEntityModel
+                  true && entityModel instanceof SinglePartEntityModel
                      ? 0
                      : (
-                        0 <= 1 && entityModel instanceof CompositeEntityModel
+                        true && entityModel instanceof CompositeEntityModel
                            ? 1
-                           : (0 <= 2 && entityModel instanceof LlamaEntityModel ? 2 : (0 <= 3 && entityModel instanceof RabbitEntityModel ? 3 : 4))
+                           : (true && entityModel instanceof LlamaEntityModel ? 2 : (true && entityModel instanceof RabbitEntityModel ? 3 : 4))
                      )
                )) {
                case 0:

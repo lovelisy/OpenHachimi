@@ -272,7 +272,7 @@ public class TweakMarco extends Module5 {
          n = 0;
       } else {
          n = 0;
-         if (0 >= 9) {
+         if (false) {
             return -1;
          }
       }

@@ -401,7 +401,7 @@ public class Criticals extends ClientModule {
       int n5 = 1;
       int[] ns;
       int n6;
-      if (1 <= 2) {
+      if (true) {
          ns = b;
          temp = ns.length;
          n6 = 0;
@@ -441,7 +441,7 @@ public class Criticals extends ClientModule {
             d6 = ds2[n4];
             mutable = new Mutable(client.player.getX() + d5, client.player.getY(), client.player.getZ() + d6);
             n5 = 1;
-         } while (1 > 2);
+         } while (false);
 
          ns = b;
          temp = ns.length;
@@ -472,7 +472,7 @@ public class Criticals extends ClientModule {
                   d6 = ds2[n4];
                   mutable = new Mutable(client.player.getX() + d5, client.player.getY(), client.player.getZ() + d6);
                   n5 = 1;
-               } while (1 > 2);
+               } while (false);
 
                ns = b;
                temp = ns.length;
@@ -484,7 +484,7 @@ public class Criticals extends ClientModule {
          int[] ns3 = b;
          temp = ns3.length;
          int n11 = 0;
-         if (0 < 3) {
+         if (true) {
             do {
                int n12 = ns3[n11];
                BlockPos pos2 = mutable.add(n10, 0, n12);
