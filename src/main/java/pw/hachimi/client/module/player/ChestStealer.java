@@ -704,8 +704,8 @@ public class ChestStealer extends ClientModule {
          switch (n15 ^ temp2) {
             case -1891627375:
                flag = true;
-               n15 = -1797846654;
-               n17 = -730123719;
+               n15 = -683316596;
+               n17 = 0;
                n16 = 1758443437;
                break;
             case -1681669833:
@@ -718,23 +718,23 @@ public class ChestStealer extends ClientModule {
                            n17 = -716693103;
                            n16 = n23;
                         } else {
-                           n15 = -1890053286;
-                           n17 = 1619510463;
+                           n15 = 1128847626;
+                           n17 = 0;
                            n16 = 1933618549;
                         }
                      } else {
-                        n15 = 1947641296;
-                        n17 = 842656509;
+                        n15 = 1128847626;
+                        n17 = 0;
                         n16 = 1933618549;
                      }
                   } else {
-                     n15 = -1890053286;
-                     n17 = 1619510463;
+                     n15 = 1128847626;
+                     n17 = 0;
                      n16 = 1933618549;
                   }
                } else {
-                  n15 = -1890053286;
-                  n17 = 1619510463;
+                  n15 = 1128847626;
+                  n17 = 0;
                   n16 = 1933618549;
                }
                break;
@@ -761,8 +761,8 @@ public class ChestStealer extends ClientModule {
                break;
             case -1081418463:
                n11 += b2;
-               n15 = -1386647874;
-               n17 = 110390631;
+               n15 = -1453838510;
+               n17 = 0;
                n16 = 1363267729;
                break;
             case -867527713:
@@ -772,15 +772,15 @@ public class ChestStealer extends ClientModule {
                   n17 = 893420519;
                   n16 = n27;
                } else {
-                  n15 = -1665069668;
-                  n17 = 1074625963;
+                  n15 = 1657741342;
+                  n17 = 0;
                   n16 = 1624880051;
                }
                break;
             case -815422139:
                n8 += 2;
-               n15 = 1952254558;
-               n17 = 234141669;
+               n15 = 1401290274;
+               n17 = 0;
                n16 = 1930101499;
                break;
             case -794832413:
@@ -798,8 +798,8 @@ public class ChestStealer extends ClientModule {
                n16 = n29;
                break;
             case -578123683:
-               n15 = 114594094;
-               n17 = 204128671;
+               n15 = -2010175940;
+               n17 = 0;
                n16 = 1147516387;
                break;
             case -454139965:
@@ -837,8 +837,8 @@ public class ChestStealer extends ClientModule {
                   n17 = 44248631;
                   n16 = n34;
                } else {
-                  n15 = 1872346888;
-                  n17 = -1909193605;
+                  n15 = -683316596;
+                  n17 = 0;
                   n16 = 1758443437;
                }
                break;
@@ -856,14 +856,14 @@ public class ChestStealer extends ClientModule {
                   n17 = -1990437219;
                   n16 = n36;
                } else {
-                  n15 = 788080756;
-                  n17 = 723863007;
+                  n15 = -1557288452;
+                  n17 = 0;
                   n16 = 1816661177;
                }
                break;
             case -65487313:
                int n37 = (1896218452);
-               n15 = (835099935 + n17 + -2 * (n17 & n37) + n37);
+               n15 = (835099935 + (n17 ^ n37));
                n17 = 0;
                break;
             case 35034029:
@@ -875,8 +875,8 @@ public class ChestStealer extends ClientModule {
                   n17 = -1494820905;
                   n16 = n38;
                } else {
-                  n15 = 1872346888;
-                  n17 = -1909193605;
+                  n15 = -683316596;
+                  n17 = 0;
                   n16 = 1758443437;
                }
                break;
@@ -889,7 +889,7 @@ public class ChestStealer extends ClientModule {
                break;
             case 123078821:
                int n40 = (1708348543);
-               n15 = (-346154360 + n17 + -2 * (n17 & n40) + n40);
+               n15 = (-346154360 + (n17 ^ n40));
                n17 = 0;
                break;
             case 130340931:
@@ -906,8 +906,8 @@ public class ChestStealer extends ClientModule {
                   n17 = -368988601;
                   n16 = n42;
                } else {
-                  n15 = 1784773422;
-                  n17 = -880499413;
+                  n15 = -1716122660;
+                  n17 = 0;
                   n16 = 1832350603;
                }
                break;
@@ -918,8 +918,8 @@ public class ChestStealer extends ClientModule {
                   n17 = -940204315;
                   n16 = n43;
                } else {
-                  n15 = -1797846654;
-                  n17 = -730123719;
+                  n15 = -683316596;
+                  n17 = 0;
                   n16 = 1758443437;
                }
                break;
@@ -937,8 +937,8 @@ public class ChestStealer extends ClientModule {
                   n17 = -308763207;
                   n16 = n45;
                } else {
-                  n15 = 114594094;
-                  n17 = 204128671;
+                  n15 = -2010175940;
+                  n17 = 0;
                   n16 = 1147516387;
                }
                break;
@@ -956,8 +956,8 @@ public class ChestStealer extends ClientModule {
                   n17 = -1218568355;
                   n16 = n47;
                } else {
-                  n15 = 712938336;
-                  n17 = 2134672751;
+                  n15 = -683316596;
+                  n17 = 0;
                   n16 = 1758443437;
                }
                break;
@@ -993,7 +993,7 @@ public class ChestStealer extends ClientModule {
                break;
             case 1118905549:
                int n52 = (-1698543414);
-               n15 = (-247030553 + n17 + -2 * (n17 & n52) + n52);
+               n15 = (-247030553 + (n17 ^ n52));
                n17 = 0;
                break;
             case 1256894665:
@@ -1028,12 +1028,12 @@ public class ChestStealer extends ClientModule {
             case 1928444805:
                if (n9 > n10) {
                   b3 = -1;
-                  n15 = 1822488670;
-                  n17 = -878567153;
+                  n15 = -1714450440;
+                  n17 = 0;
                   n16 = 1811345659;
                } else {
-                  n15 = 784022012;
-                  n17 = 412196065;
+                  n15 = 1939501330;
+                  n17 = 0;
                   n16 = 1812602161;
                }
                break;

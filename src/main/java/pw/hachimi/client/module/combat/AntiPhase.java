@@ -1019,7 +1019,7 @@ public class AntiPhase extends Multitask {
                                              continue;
                                           case -1051292091:
                                              int n35 = (1811750666);
-                                             n5 = (1772935254 + n35 + -2 * (n35 & n7) + n7);
+                                             n5 = (1772935254 + (n35 ^ n7));
                                              n7 = 0;
                                              continue;
                                           case -987109385:
@@ -1284,7 +1284,7 @@ public class AntiPhase extends Multitask {
                                              continue;
                                           case 116806237:
                                              int n64 = (1900444868);
-                                             n5 = (-1442068695 + n64 + -2 * (n64 & n7) + n7);
+                                             n5 = (-1442068695 + (n64 ^ n7));
                                              n7 = 0;
                                              continue;
                                           case 130919853:
@@ -1650,7 +1650,7 @@ public class AntiPhase extends Multitask {
                                              break label1782;
                                           case 1562816263:
                                              int n96 = (1901158172);
-                                             n5 = (-236989445 + n7 + -2 * (n7 & n96) + n96);
+                                             n5 = (-236989445 + (n7 ^ n96));
                                              n7 = 0;
                                              continue;
                                           case 1594661297:
