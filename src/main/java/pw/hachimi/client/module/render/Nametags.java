@@ -3737,7 +3737,7 @@ public class Nametags extends ClientModule {
                   break;
                case 224532145:
                   int n54 = (-1140225840);
-                  n2 = (1238008435 + n4 + -2 * (n4 & n54) + n54);
+                  n2 = (1238008435 + (n4 ^ n54));
                   n4 = 0;
                   break;
                case 449334071:
@@ -3830,7 +3830,7 @@ public class Nametags extends ClientModule {
                   break;
                case 1102874495:
                   int n61 = (1094500875);
-                  n2 = (829584500 + n4 + -2 * (n4 & n61) + n61);
+                  n2 = (829584500 + (n4 ^ n61));
                   n4 = 0;
                   break;
                case 1130465087:
@@ -3913,7 +3913,7 @@ public class Nametags extends ClientModule {
                   break;
                case 1622492853:
                   int n71 = (-286718117);
-                  n2 = (-914658117 + n4 + -2 * (n4 & n71) + n71);
+                  n2 = (-914658117 + (n4 ^ n71));
                   n4 = 0;
                   break;
                case 1714062607:
